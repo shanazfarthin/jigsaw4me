@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/jigsaw4me/static/css/main.2b78dbb5.css",
-    "main.js": "/jigsaw4me/static/js/main.65740dd7.js",
-    "static/media/puzzle back.png": "/jigsaw4me/static/media/puzzle back.aa254570e21709dd229c.png",
+    "main.css": "/jigsaw4me/static/css/main.b497d7ae.chunk.css",
+    "main.js": "/jigsaw4me/static/js/main.44901e0e.chunk.js",
+    "main.js.map": "/jigsaw4me/static/js/main.44901e0e.chunk.js.map",
+    "runtime~main.js": "/jigsaw4me/static/js/runtime~main.96901f77.js",
+    "runtime~main.js.map": "/jigsaw4me/static/js/runtime~main.96901f77.js.map",
+    "static/js/2.ae026ab9.chunk.js": "/jigsaw4me/static/js/2.ae026ab9.chunk.js",
+    "static/js/2.ae026ab9.chunk.js.map": "/jigsaw4me/static/js/2.ae026ab9.chunk.js.map",
     "index.html": "/jigsaw4me/index.html",
-    "main.2b78dbb5.css.map": "/jigsaw4me/static/css/main.2b78dbb5.css.map",
-    "main.65740dd7.js.map": "/jigsaw4me/static/js/main.65740dd7.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.2b78dbb5.css",
-    "static/js/main.65740dd7.js"
-  ]
+    "precache-manifest.9c599a6227013707114dfb2e9c96501c.js": "/jigsaw4me/precache-manifest.9c599a6227013707114dfb2e9c96501c.js",
+    "service-worker.js": "/jigsaw4me/service-worker.js",
+    "static/css/main.b497d7ae.chunk.css.map": "/jigsaw4me/static/css/main.b497d7ae.chunk.css.map",
+    "static/media/App.css": "/jigsaw4me/static/media/puzzle back.e58a1e40.png"
+  }
 }
