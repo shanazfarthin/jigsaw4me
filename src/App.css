@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+  background-image: url('./puzzle back.png'); /* Reference your image */
+  background-size: 95%; /* Adjust the size of the image (e.g., 70% of the container) */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  min-height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  overflow: hidden; /* Prevent scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Align content vertically */
+ 
+}
+
+h1 {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
+  color: #d21515; /* Tomato red color */
+  font-size: 3rem; /* Larger text for more visibility */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a slight shadow effect */
+}
+
+p {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for paragraphs */
+  color: #024b02; /* Lime green color */
+  font-size: 2rem; /* Larger paragraph text */
+  margin-top: 20px; /* Add top margin for spacing */
+}
+
+button {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for buttons */
+  color: white;
+  background-color: #FFD700; /* Bright yellow button */
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FF4500; /* Change color on hover */
+}
+@media only screen and (max-width: 768px) {
+  .App {
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 10px;
+  }
+
+  .PuzzleBoard {
+    width: 300px; /* Adjust puzzle size for smaller screens */
+    height: 300px;
+    gap: 1px; /* Reduce gap between puzzle pieces */
+  }
+
+  .animatedMessage {
+    font-size: 30px; /* Adjust text size */
+  }
+}

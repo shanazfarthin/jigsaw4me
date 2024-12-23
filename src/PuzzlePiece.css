@@ -1,0 +1,51 @@
+.PuzzlePiece {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #333;
+  box-sizing: border-box;
+}
+
+.PuzzlePiece img {
+  width: 80px;  /* Adjust image size */
+  height: 80px;  /* Adjust image size */
+  object-fit: cover;  /* Makes sure the image covers the area without stretching */
+}
+
+.PuzzleContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.LeftSide, .RightSide {
+  width: 20%;
+  text-align: center;
+}
+
+.PuzzleBoard {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.PuzzleGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
+.PuzzlePiece img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.Timer {
+  font-size: 18px;
+  margin-top: 10px;
+}
