@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/jigsaw4me/static/css/main.2b78dbb5.css",
+    "main.js": "/jigsaw4me/static/js/main.65740dd7.js",
+    "static/media/puzzle back.png": "/jigsaw4me/static/media/puzzle back.aa254570e21709dd229c.png",
+    "index.html": "/jigsaw4me/index.html",
+    "main.2b78dbb5.css.map": "/jigsaw4me/static/css/main.2b78dbb5.css.map",
+    "main.65740dd7.js.map": "/jigsaw4me/static/js/main.65740dd7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2b78dbb5.css",
+    "static/js/main.65740dd7.js"
+  ]
+}
