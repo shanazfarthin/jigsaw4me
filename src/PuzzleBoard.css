@@ -1,6 +1,6 @@
 .PuzzleBoard {
   position: relative;
-  top: -30px; /* Move the puzzle board 20px down from its original position */
+  top: -30px; /* Adjust for positioning */
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 4 columns */
   grid-template-rows: repeat(4, 1fr); /* 4 rows */
@@ -10,6 +10,8 @@
   margin: 0 auto;
   border: 2px solid #ccc;
   background-color: #F4E885;
+  touch-action: manipulation; /* Ensures smooth touch interactions */
+  user-select: none; /* Prevents accidental text selection on touch devices */
 }
 
 .PuzzlePiece img {
@@ -19,28 +21,47 @@
   cursor: pointer;
 }
 
-input[type='file'] {
+input[type="file"] {
   margin: 50px;
-  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for paragraphs */
-  color: #024b02; /* Lime green color */
-  font-size: 1rem; /* Larger paragraph text */
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  color: #024b02;
+  font-size: 1rem;
 }
 
 button {
   margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff2a00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
 }
+
+button:hover:not(:disabled) {
+  background-color: #e62300; /* Darker red on hover */
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 .PuzzleContainer {
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* Align content at the top */
-  min-height: calc(100vh - 50px); /* Reduces the height of the container to make space at the bottom */
+  align-items: flex-start;
+  min-height: calc(100vh - 50px);
   width: 100%;
-  margin: 0 auto; /* Center horizontally */
-  padding-bottom: 50px; /* Add padding at the bottom for space */
-  margin-top: 50px; /* Moves the entire container down */
+  margin: 0 auto;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
+
 .Stopwatch {
-  font-size: 2rem; /* Make the stopwatch time larger */
+  font-size: 2rem;
   margin-top: 20px;
   color: #333;
   text-align: center;
@@ -50,15 +71,6 @@ button {
 .center {
   width: 25%;
   text-align: center;
-}
-
-.PuzzleBoard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 50px;
-  
 }
 
 .PuzzleGrid {
@@ -73,6 +85,11 @@ button {
   border: 1px solid #ccc;
   box-sizing: border-box;
   cursor: pointer;
+  transition: transform 0.2s ease; /* Smooth scaling effect */
+}
+
+.PuzzlePiece:hover {
+  transform: scale(1.05); /* Slight zoom-in on hover */
 }
 
 .PuzzlePiece img {
@@ -85,40 +102,25 @@ button {
   text-align: center;
 }
 
-input[type="file"] {
-  margin-bottom: 50px;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #ff2a00;
-  color: white;
-  border: none;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-button:disabled {
-  background-color: #ccc;
+.RightSide img {
+  max-width: 80%;
+  height: auto;
+  margin: 10px auto;
+  border: 2px solid #97bacf;
+  border-radius: 8px;
 }
 
 .Timer p {
   font-size: 20px;
   font-weight: bold;
 }
-.RightSide img {
-  max-width: 80%; /* Adjust the size as needed */
-  height: auto;
-  margin: 10px auto; /* Center the image with some margin */
-  border: 2px solid #97bacf; /* Optional: Add a border for better visibility */
-  border-radius: 8px; /* Optional: Add rounded corners */
-}
+
 .animatedMessage {
   font-size: 45px;
   color: #330564;
   font-weight: bold;
-  animation: pulse 1.5s infinite; /* Apply the pulsing animation */
-  margin-top: 20px; /* Adjust the spacing to move it down */
+  animation: pulse 1.5s infinite;
+  margin-top: 20px;
 }
 
 @keyframes pulse {
@@ -133,5 +135,31 @@ button:disabled {
   100% {
     opacity: 0.5;
     transform: scale(1);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .PuzzleBoard {
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+    gap: 5px;
+  }
+
+  .PuzzlePiece {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .PuzzleBoard {
+    width: 500px;
+    height: 500px;
+  }
+
+  .PuzzlePiece {
+    width: 120px;
+    height: 120px;
   }
 }

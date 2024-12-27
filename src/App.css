@@ -42,7 +42,7 @@ button {
 button:hover {
   background-color: #FF4500; /* Change color on hover */
 }
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .App {
     font-size: 14px; /* Adjust font size for smaller screens */
     padding: 10px;
@@ -57,4 +57,40 @@ button:hover {
   .animatedMessage {
     font-size: 30px; /* Adjust text size */
   }
+
+  body {
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%; /* Make buttons fill the screen width */
+    padding: 10px;
+  }
 }
+/* For small screens like phones */
+@media (max-width: 600px) {
+  .puzzle-board {
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr); /* Adjust columns for smaller screens */
+  }
+}
+
+/* For tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .puzzle-board {
+    width: 80%;
+    height: auto;
+    grid-template-columns: repeat(6, 1fr); /* Adjust for medium screens */
+  }
+}
+
+/* For desktops and laptops */
+@media (min-width: 1025px) {
+  .puzzle-board {
+    width: 70%;
+    height: auto;
+    grid-template-columns: repeat(8, 1fr); /* Adjust for larger screens */
+  }
+}
+

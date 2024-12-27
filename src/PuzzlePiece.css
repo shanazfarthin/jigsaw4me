@@ -8,18 +8,21 @@
   justify-content: center;
   border: 2px solid #333;
   box-sizing: border-box;
+  cursor: pointer; /* Indicates that the piece is clickable */
+  touch-action: manipulation; /* Ensures smooth touch interactions */
 }
 
 .PuzzlePiece img {
-  width: 80px;  /* Adjust image size */
-  height: 80px;  /* Adjust image size */
-  object-fit: cover;  /* Makes sure the image covers the area without stretching */
+  width: 80px; /* Adjust image size */
+  height: 80px; /* Adjust image size */
+  object-fit: cover; /* Ensures the image doesn't stretch */
 }
 
 .PuzzleContainer {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  flex-wrap: wrap; /* Makes the layout responsive */
 }
 
 .LeftSide, .RightSide {
@@ -42,10 +45,52 @@
 .PuzzlePiece img {
   width: 100%;
   height: auto;
-  cursor: pointer;
+  cursor: pointer; /* Makes it clear the piece is clickable */
 }
 
 .Timer {
   font-size: 18px;
   margin-top: 10px;
+}
+
+.puzzle-piece {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  touch-action: manipulation; /* Ensures smooth touch interactions */
+}
+
+@media only screen and (max-width: 768px) {
+  .PuzzlePiece {
+    width: 80px; /* Smaller pieces for smaller screens */
+    height: 80px;
+    margin: 5px;
+  }
+
+  .PuzzlePiece img {
+    width: 60px; /* Adjust image size */
+    height: 60px;
+  }
+
+  .PuzzleBoard {
+    width: 100%;
+  }
+
+  .PuzzleContainer {
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .PuzzlePiece {
+    width: 120px; /* Larger pieces for larger screens */
+    height: 120px;
+  }
+
+  .PuzzlePiece img {
+    width: 100px;
+    height: 100px;
+  }
 }
