@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7a7f8b4580bbb25d40bef05fdf08dd47",
+    "revision": "9fc06e59b3a4fda4012b5e2c488c283c",
     "url": "/jigsaw4me/index.html"
   },
   {
-    "revision": "9d3b272d966cc45cedf4",
-    "url": "/jigsaw4me/static/css/main.7266425a.chunk.css"
+    "revision": "a6792dff1e6e4386e2e3",
+    "url": "/jigsaw4me/static/css/main.fe9acab7.chunk.css"
   },
   {
     "revision": "638e200e69d950262938",
     "url": "/jigsaw4me/static/js/2.ae026ab9.chunk.js"
   },
   {
-    "revision": "9d3b272d966cc45cedf4",
-    "url": "/jigsaw4me/static/js/main.44901e0e.chunk.js"
+    "revision": "a6792dff1e6e4386e2e3",
+    "url": "/jigsaw4me/static/js/main.aae54419.chunk.js"
   },
   {
     "revision": "3ac5d3b726391539e8b8",
