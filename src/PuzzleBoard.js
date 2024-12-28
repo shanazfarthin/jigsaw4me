@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './PuzzleBoard.css';
+import './PuzzleBoard.css'; // Assuming you have a separate CSS for PuzzleBoard
 
-function PuzzlePiece({ piece, index, onDragStart, onDrop }) {
+const PuzzlePiece = ({ piece, index, onDragStart, onDrop }) => {
   return (
     <div
       className="PuzzlePiece"
@@ -13,9 +13,9 @@ function PuzzlePiece({ piece, index, onDragStart, onDrop }) {
       <img src={piece} alt={`Puzzle piece ${index}`} />
     </div>
   );
-}
+};
 
-function PuzzleBoard() {
+const PuzzleBoard = () => {
   const [image, setImage] = useState(null);
   const [pieces, setPieces] = useState([]);
   const [shuffledPieces, setShuffledPieces] = useState([]);
@@ -141,7 +141,7 @@ function PuzzleBoard() {
   return (
     <div className="PuzzleContainer">
       <div className="center">
-      {!image && <div className="animatedMessage">Insert your image here</div>}
+        {!image && <div className="animatedMessage">Insert your image here</div>}
         {!image && <input type="file" onChange={handleImageUpload} />}
       </div>
       <div className="PuzzleBoard">
@@ -170,6 +170,6 @@ function PuzzleBoard() {
       <canvas ref={canvasRef} style={{ display: 'none' }}></canvas>
     </div>
   );
-}
+};
 
 export default PuzzleBoard;

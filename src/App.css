@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   background-image: url('./puzzle back.png'); /* Reference your image */
-  background-size: 95%; /* Adjust the size of the image (e.g., 70% of the container) */
+  background-size: 100%; /* Adjust the size of the image (e.g., 70% of the container) */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   min-height: 100vh; /* Full viewport height */
@@ -25,7 +25,9 @@ p {
   font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font for paragraphs */
   color: #024b02; /* Lime green color */
   font-size: 2rem; /* Larger paragraph text */
-  margin-top: 20px; /* Add top margin for spacing */
+  margin-top: -10px; /* Reduced top margin to bring it closer to the top */
+  position: relative; /* Allows precise control of placement */
+  top: -10px; /* Moves the paragraph upwards */
 }
 
 button {
@@ -55,7 +57,7 @@ button:hover {
   }
 
   .animatedMessage {
-    font-size: 30px; /* Adjust text size */
+    font-size: 20px; /* Adjust text size */
   }
 
   body {

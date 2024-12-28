@@ -21,7 +21,7 @@
 .PuzzleContainer {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40px;
   flex-wrap: wrap; /* Makes the layout responsive */
 }
 
