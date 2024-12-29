@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/jigsaw4me/static/css/main.fe9acab7.chunk.css",
-    "main.js": "/jigsaw4me/static/js/main.aae54419.chunk.js",
-    "main.js.map": "/jigsaw4me/static/js/main.aae54419.chunk.js.map",
-    "runtime~main.js": "/jigsaw4me/static/js/runtime~main.96901f77.js",
-    "runtime~main.js.map": "/jigsaw4me/static/js/runtime~main.96901f77.js.map",
-    "static/js/2.ae026ab9.chunk.js": "/jigsaw4me/static/js/2.ae026ab9.chunk.js",
-    "static/js/2.ae026ab9.chunk.js.map": "/jigsaw4me/static/js/2.ae026ab9.chunk.js.map",
+    "main.css": "/jigsaw4me/static/css/main.38551feb.chunk.css",
+    "main.js": "/jigsaw4me/static/js/main.9be3b254.chunk.js",
+    "main.js.map": "/jigsaw4me/static/js/main.9be3b254.chunk.js.map",
+    "runtime-main.js": "/jigsaw4me/static/js/runtime-main.f9ccbd08.js",
+    "runtime-main.js.map": "/jigsaw4me/static/js/runtime-main.f9ccbd08.js.map",
+    "static/js/2.c5fdd10b.chunk.js": "/jigsaw4me/static/js/2.c5fdd10b.chunk.js",
+    "static/js/2.c5fdd10b.chunk.js.map": "/jigsaw4me/static/js/2.c5fdd10b.chunk.js.map",
     "index.html": "/jigsaw4me/index.html",
-    "precache-manifest.3a4bc2d251984f916d13c84e2014ba11.js": "/jigsaw4me/precache-manifest.3a4bc2d251984f916d13c84e2014ba11.js",
-    "service-worker.js": "/jigsaw4me/service-worker.js",
-    "static/css/main.fe9acab7.chunk.css.map": "/jigsaw4me/static/css/main.fe9acab7.chunk.css.map",
-    "static/media/App.css": "/jigsaw4me/static/media/puzzle back.e58a1e40.png"
-  }
+    "static/css/main.38551feb.chunk.css.map": "/jigsaw4me/static/css/main.38551feb.chunk.css.map",
+    "static/js/2.c5fdd10b.chunk.js.LICENSE.txt": "/jigsaw4me/static/js/2.c5fdd10b.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/jigsaw4me/static/media/puzzle back.aa254570.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f9ccbd08.js",
+    "static/js/2.c5fdd10b.chunk.js",
+    "static/css/main.38551feb.chunk.css",
+    "static/js/main.9be3b254.chunk.js"
+  ]
 }
